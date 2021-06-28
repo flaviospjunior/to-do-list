@@ -1,3 +1,3 @@
-function addProduct(){
-    $('.Teste1').clone().appendTo('.Teste2')
+function addTask(){
+    $('.tarefas #tarefa').clone().find('input').val('').end().appendTo('.outrasTarefas')
 }

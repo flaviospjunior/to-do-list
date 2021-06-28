@@ -11,12 +11,14 @@
   </head>
   <header>To do List</header>
   <body>
-    teste nome
-    <div class="Teste1">
-      <input type="button" value="Teste Button" onclick="addProduct()" />
+   <div class="tarefas">
+    <div class="tarefa" id="tarefa" >
+    Tarefa:
+      <input type="text" onblur="addTask()"/>
+      <button onclick= "addTask()" type="button">Adicionar Tarefa</button>
     </div>
-    <div class="Teste2">
-      <input type="button" value="Teste Button" onclick="addProduct()" />
     </div>
+
+   <div class="outrasTarefas"></div>
   </body>
 </html>
