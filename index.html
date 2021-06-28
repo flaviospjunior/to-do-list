@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>To do List</title>
   </head>
   <header>To do List</header>
   <body>
    <div class="tarefas">
-    <div class="tarefa" id="tarefa" >
+    <div class="tarefas" id="tarefa" >
     Tarefa:
-      <input type="text" onblur="addTask()"/>
+      <input type="text"/>
       <button onclick= "addTask()" type="button">Adicionar Tarefa</button>
     </div>
     </div>
-
    <div class="outrasTarefas"></div>
+   <script src="script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>$(document).ready(teste())</script>
   </body>
 </html>
