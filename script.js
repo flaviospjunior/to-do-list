@@ -1,13 +1,11 @@
-function addTask(){
-    $('.tarefas #tarefa').clone().find('input').val('').end().appendTo('.outrasTarefas')
-    
-};
+function addTask() {
+  $("#tarefa").clone().find("#tarefa").val("").end().appendTo(".outrasTarefas");
+}
 
-function teste()
-{
-    $('.tarefas').keydown(function (tecla){
-        if (tecla.keyCode == 9){
-            addTask();
-        } ;
-    })
+function teste() {
+  $("#adicionar").keydown(function (tecla) {
+    if (tecla.keyCode == 9) {
+      addTask();
+    }
+  });
 }

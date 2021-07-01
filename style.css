@@ -4,6 +4,7 @@ html {
   padding: 0;
   background-image: linear-gradient(#56addf, #0072b5);
   font-family: "Comfortaa", cursive;
+  background-attachment: fixed;
 }
 
 #adicionar {
