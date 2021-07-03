@@ -3,7 +3,6 @@ document.addEventListener("keydown", function (tecla) {
     document.activeElement == document.querySelector("#adicionar") &&
     tecla.key == "Tab"
   ) {
-    import { addTask } from "./script.js";
-    addTask();
+    console.log("TESTE");
   }
 });
