@@ -1,11 +1,6 @@
 function addTask() {
-  $("#tarefa").clone().find("#tarefa").val("").end().appendTo(".outrasTarefas");
-}
-
-function teste() {
-  $("#adicionar").keydown(function (tecla) {
-    if (tecla.keyCode == 9) {
-      addTask();
-    }
-  });
+  const taskDiv = document.querySelector("#tarefa");
+  const outrasTarefas = document.querySelector(".outrasTarefas");
+  const clone = taskDiv.cloneNode(true);
+  outrasTarefas.appendChild(clone);
 }
