@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>To do List</title>
   </head>
   <header>To do List</header>
@@ -18,13 +24,16 @@
     <div class="tarefas">
       <div class="tarefa" id="tarefa">
         <input type="checkbox" />
-        <input type="text" id="firstInput" value="Insira seu texto aqui..." />
+        <input
+          type="text"
+          id="firstInput"
+          placeholder="Insira seu texto aqui..."
+        />
         <button id="adicionar" onclick="addTask()" type="button">+</button>
       </div>
     </div>
     <div class="outrasTarefas"></div>
     <script src="tabAdd.js"></script>
     <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
