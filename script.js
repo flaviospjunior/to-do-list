@@ -5,3 +5,5 @@ function addTask() {
   const clone = taskDiv.cloneNode(true);
   outrasTarefas.appendChild(clone);
 }
+
+export default addTask;
