@@ -1,4 +1,4 @@
-import { addTask } from "./script";
+import addTask from "./script.js";
 //import * as taskManager from "./script";
 //import teste from "./script";
 

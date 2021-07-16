@@ -23,20 +23,28 @@
     <h1 class="titulo">To-do List</h1>
   </header>
   <body>
-    <div class="outrasTarefas">
-      <div class="tarefas">
-        <div class="tarefa">
-          <input type="checkbox" />
-          <input
-            class="text-input"
-            type="text"
-            placeholder="Insira seu texto aqui..."
-          />
-          <button class="adicionar" type="button">+</button>
+    <div class="container">
+      <div class="outrasTarefas">
+        <div class="tarefas">
+          <div class="tarefa">
+            <input type="checkbox" class="checkbox" />
+            <input
+              class="text-input"
+              type="text"
+              placeholder="Insira seu texto aqui..."
+            />
+            <button class="adicionar" type="button" onclick="addTask()">
+              +
+            </button>
+          </div>
         </div>
       </div>
+      <div class="controles">
+        <button>TESTE</button>
+        <button>TESTE2</button>
+        <button>TESTE3</button>
+      </div>
     </div>
-    <script type="module" src="tabAdd.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
