@@ -22,7 +22,8 @@ function addTask() {
     outrasTarefas.appendChild(tarefas);
   }
   criacao();
+}
 
-  //const clone = taskDiv.cloneNode(true);
-  //outrasTarefas.appendChild(clone);
+function marcacao() {
+  // Implementar função de riscar tarefas marcadas.
 }
