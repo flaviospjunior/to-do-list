@@ -27,8 +27,14 @@
       <div class="outrasTarefas">
         <div class="tarefas">
           <div class="tarefa">
-            <input type="checkbox" class="checkbox" />
             <input
+              type="checkbox"
+              onclick="marcacao(this.id)"
+              class="checkbox"
+              id="checkbox"
+            />
+            <input
+              id="text-input"
               class="text-input"
               type="text"
               placeholder="Insira seu texto aqui..."

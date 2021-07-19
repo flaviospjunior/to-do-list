@@ -11,7 +11,9 @@ function addTask() {
     divTarefa.classList.add("tarefa");
 
     const cloneCheckBox = document.querySelector(".checkbox").cloneNode(true);
+    cloneCheckBox.id = `checkbox${listaTarefas.length}`;
     const cloneInput = document.querySelector(".text-input").cloneNode(true);
+    cloneInput.id = `text-input${listaTarefas.length}`;
     const cloneAdd = document.querySelector(".adicionar").cloneNode(true);
 
     divTarefa.appendChild(cloneCheckBox);
@@ -24,6 +26,10 @@ function addTask() {
   criacao();
 }
 
-function marcacao() {
-  // Implementar função de riscar tarefas marcadas.
+function marcacao(id) {
+  let inputParaMarcar = document.getElementById(`text-input${id.substr(8)}`);
+  let flagId = document.getElementById(id);
+  if (flagId.checked == true && inputParaMarcar.value.length > 0) {
+    inputParaMarcar.classList.add("tracejar");
+  } else inputParaMarcar.classList.remove("tracejar");
 }
