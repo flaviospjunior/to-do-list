@@ -5,7 +5,7 @@ function addTask() {
     let listaTarefas = Array.from(document.querySelectorAll(".tarefa"));
 
     const tarefas = document.createElement(`div${listaTarefas.length}`);
-    tarefas.classList.add("tarefas");
+    tarefas.classList.add("tarefas", "shadow");
 
     const divTarefa = document.createElement(`div${listaTarefas.length}`);
     divTarefa.classList.add("tarefa");
@@ -29,7 +29,13 @@ function addTask() {
 function marcacao(id) {
   let inputParaMarcar = document.getElementById(`text-input${id.substr(8)}`);
   let flagId = document.getElementById(id);
+  let parentDiv = flagId.parentNode.parentNode;
+  console.log(parentDiv);
   if (flagId.checked == true && inputParaMarcar.value.length > 0) {
     inputParaMarcar.classList.add("tracejar");
-  } else inputParaMarcar.classList.remove("tracejar");
+    parentDiv.classList.remove("shadow");
+  } else {
+    inputParaMarcar.classList.remove("tracejar");
+    parentDiv.classList.add("shadow");
+  }
 }
